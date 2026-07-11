@@ -1,50 +1,41 @@
 {
-    "name":  "Chainbound: The Flooded Belfry",
-    "short_name":  "Chainbound",
-    "description":  "A phone-first cooperative tactical battle where four intentions become one chain.",
-    "id":  "/",
-    "start_url":  "/chainbound-flooded-belfry-demo/?source=pwa",
-    "scope":  "/chainbound-flooded-belfry-demo/",
-    "display":  "standalone",
-    "orientation":  "any",
-    "background_color":  "#071521",
-    "theme_color":  "#071521",
-    "categories":  [
-                       "games",
-                       "entertainment"
-                   ],
-    "icons":  [
-                  {
-                      "src":  "/chainbound-flooded-belfry-demo/icons/icon-192.png",
-                      "sizes":  "192x192",
-                      "type":  "image/png",
-                      "purpose":  "any"
-                  },
-                  {
-                      "src":  "/chainbound-flooded-belfry-demo/icons/icon-512.png",
-                      "sizes":  "512x512",
-                      "type":  "image/png",
-                      "purpose":  "any maskable"
-                  },
-                  {
-                      "src":  "/chainbound-flooded-belfry-demo/icons/chainbound-mark.svg",
-                      "sizes":  "any",
-                      "type":  "image/svg+xml",
-                      "purpose":  "any maskable"
-                  }
-              ],
-    "shortcuts":  [
-                      {
-                          "name":  "Continue battle",
-                          "short_name":  "Battle",
-                          "url":  "/chainbound-flooded-belfry-demo/?continue=true",
-                          "icons":  [
-                                        {
-                                            "src":  "/chainbound-flooded-belfry-demo/icons/chainbound-mark.svg",
-                                            "sizes":  "any",
-                                            "type":  "image/svg+xml"
-                                        }
-                                    ]
-                      }
-                  ]
+  "name": "Chainbound: The Flooded Belfry",
+  "short_name": "Chainbound",
+  "description": "A phone-first cooperative tactical battle where four intentions become one chain.",
+  "id": "./",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#071521",
+  "theme_color": "#071521",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/chainbound-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Continue battle",
+      "short_name": "Battle",
+      "url": "./?continue=true",
+      "icons": [{ "src": "icons/chainbound-mark.svg", "sizes": "any", "type": "image/svg+xml" }]
+    }
+  ]
 }

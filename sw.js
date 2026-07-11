@@ -1,5 +1,10 @@
-const CACHE = "chainbound-belfry-v1.2.0";
-const SHELL = ["/chainbound-flooded-belfry-demo/", "/chainbound-flooded-belfry-demo/manifest.webmanifest", "/chainbound-flooded-belfry-demo/icons/chainbound-mark.svg"];
+const CACHE = "chainbound-belfry-v1.3.0";
+
+// Resolve the app root from the worker's own location rather than assuming "/".
+// On GitHub Pages the app is served from /chainbound-flooded-belfry-demo/, so a
+// hard-coded "/" made every shell entry a 404 and the install event rejected.
+const ROOT = new URL("./", self.location).pathname;
+const SHELL = [ROOT, `${ROOT}manifest.webmanifest`, `${ROOT}icons/chainbound-mark.svg`];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -23,10 +28,10 @@ self.addEventListener("fetch", (event) => {
         .then(async (response) => {
           const copy = response.clone();
           const cache = await caches.open(CACHE);
-          await cache.put("/chainbound-flooded-belfry-demo/", copy);
+          await cache.put(ROOT, copy);
           return response;
         })
-        .catch(() => caches.match("/chainbound-flooded-belfry-demo/")),
+        .catch(() => caches.match(ROOT)),
     );
     return;
   }

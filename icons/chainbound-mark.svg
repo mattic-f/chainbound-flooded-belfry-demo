@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Chainbound</title>
+  <desc id="desc">An interlocked four-point Echo sigil surrounding a bell.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#173b48"/><stop offset="1" stop-color="#071521"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe8a6"/><stop offset="1" stop-color="#c78d31"/></linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <path d="M256 52 336 132 256 212 176 132Z" fill="none" stroke="#77d7d5" stroke-width="24"/>
+  <path d="M460 256 380 336 300 256 380 176Z" fill="none" stroke="#ee7958" stroke-width="24"/>
+  <path d="M256 460 176 380 256 300 336 380Z" fill="none" stroke="#75c17d" stroke-width="24"/>
+  <path d="M52 256 132 176 212 256 132 336Z" fill="none" stroke="#e9ad4d" stroke-width="24"/>
+  <circle cx="256" cy="256" r="102" fill="#0d222d" stroke="#c99b4c" stroke-width="10"/>
+  <path d="M256 149c-42 0-68 34-68 76v57l-23 30h182l-23-30v-57c0-42-26-76-68-76Z" fill="url(#gold)"/>
+  <path d="M232 322c4 25 12 38 24 38s20-13 24-38Z" fill="#f5b94d"/>
+  <path d="M208 233h96M222 197h68" fill="none" stroke="#624515" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <circle cx="256" cy="256" r="126" fill="none" stroke="#a878e4" stroke-width="7" stroke-dasharray="18 18"/>
+</svg>

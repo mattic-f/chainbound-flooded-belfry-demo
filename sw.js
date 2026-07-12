@@ -1,4 +1,10 @@
-const CACHE = "chainbound-belfry-v1.3.0";
+// BUMP THIS ON EVERY DEPLOY. The activate handler deletes every cache whose key
+// !== CACHE, so a new CACHE name is the ONLY thing that evicts a returning
+// player's stale app shell. Leave it unchanged and they keep the old index.html
+// (and therefore the old asset hashes) forever, even though the new sw.js
+// installed fine — which is exactly how a bad deploy stayed on screen after the
+// server was already serving the fix.
+const CACHE = "chainbound-belfry-v1.4.0";
 
 // Resolve the app root from the worker's own location rather than assuming "/".
 // On GitHub Pages the app is served from /chainbound-flooded-belfry-demo/, so a

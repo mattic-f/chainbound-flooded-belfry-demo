@@ -4,7 +4,7 @@
 // (and therefore the old asset hashes) forever, even though the new sw.js
 // installed fine — which is exactly how a bad deploy stayed on screen after the
 // server was already serving the fix.
-const CACHE = "chainbound-belfry-v1.4.0";
+const CACHE = "chainbound-belfry-v1.5.0";
 
 // Resolve the app root from the worker's own location rather than assuming "/".
 // On GitHub Pages the app is served from /chainbound-flooded-belfry-demo/, so a
